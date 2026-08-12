@@ -26,3 +26,19 @@ See memory `fbref-advanced-stats-missing`.
 - 2024-25 -> fbref_data/season2425/  (Understat season '2024')
 - 2025-26 -> fbref_data/season2526/  (Understat season '2025')
 - current 2026-27 -> not yet fetched (season starting).
+
+## fantacalcio voti (TARGET variable)
+Scraped from fantacalcio.it voti pages (server-rendered, works via plain `requests`
+OR browser): `https://www.fantacalcio.it/voti-fantacalcio-serie-a/<YYYY-YY>/<matchday>`.
+Values live in DOM attributes: `.player-grade[data-value]` (voto),
+`.player-fanta-grade[data-value]` (fantavoto), `.role[data-value]`, name in
+`.player-name`. Italian decimal comma. The Excel-export API
+(`/api/v1/Excel/votes/<seasonId>/<md>`) is premium-gated — scrape the page instead.
+Consolidated to `fantacalcio/season2425/voti_scraped.csv` and `season2526/`
+(cols: matchday, team, player, role, vote, fantavote, +_raw). ~12.6k rows/season.
+
+## STILL NEEDED
+- Quotazioni_Fantacalcio.xlsx (player prices/list) for current season.
+- seriea_calendar.xlsx (fixtures -> oppteam/home) for 2024-25, 2025-26, 2026-27.
+- Integration: adapt nb2/nb3/nb4 to consume voti_scraped.csv + the assembled
+  fbref/Understat CSVs (the old nb2 parses fantacalcio's Excel export layout).

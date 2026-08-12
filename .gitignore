@@ -4,3 +4,4 @@ tmp/
 .codegraph/
 __pycache__/
 *.pyc
+.env
