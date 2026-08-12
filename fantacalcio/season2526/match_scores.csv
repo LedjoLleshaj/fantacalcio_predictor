@@ -1,0 +1,761 @@
+matchday,team,oppteam,home,goals_for,goals_against
+1,Atalanta,Pisa,1,1,1
+1,Bologna,Roma,0,0,1
+1,Cagliari,Fiorentina,1,1,1
+1,Como,Lazio,1,2,0
+1,Cremonese,Milan,0,2,1
+1,Fiorentina,Cagliari,0,1,1
+1,Genoa,Lecce,1,0,0
+1,Hellas Verona,Udinese,0,1,1
+1,Inter,Torino,1,5,0
+1,Juventus,Parma,1,2,0
+1,Lazio,Como,0,0,2
+1,Lecce,Genoa,0,0,0
+1,Milan,Cremonese,1,1,2
+1,Napoli,Sassuolo,0,2,0
+1,Parma,Juventus,0,0,2
+1,Pisa,Atalanta,0,1,1
+1,Roma,Bologna,1,1,0
+1,Sassuolo,Napoli,1,0,2
+1,Torino,Inter,0,0,5
+1,Udinese,Hellas Verona,1,1,1
+2,Atalanta,Parma,0,1,1
+2,Bologna,Como,1,1,0
+2,Cagliari,Napoli,0,0,1
+2,Como,Bologna,0,0,1
+2,Cremonese,Sassuolo,1,3,2
+2,Fiorentina,Torino,0,0,0
+2,Genoa,Juventus,1,0,1
+2,Hellas Verona,Lazio,0,0,4
+2,Inter,Udinese,1,1,2
+2,Juventus,Genoa,0,1,0
+2,Lazio,Hellas Verona,1,4,0
+2,Lecce,Milan,1,0,2
+2,Milan,Lecce,0,2,0
+2,Napoli,Cagliari,1,1,0
+2,Parma,Atalanta,1,1,1
+2,Pisa,Roma,1,0,1
+2,Roma,Pisa,0,1,0
+2,Sassuolo,Cremonese,0,2,3
+2,Torino,Fiorentina,1,0,0
+2,Udinese,Inter,0,2,1
+3,Atalanta,Lecce,1,4,1
+3,Bologna,Milan,0,0,1
+3,Cagliari,Parma,1,2,0
+3,Como,Genoa,1,1,1
+3,Cremonese,Hellas Verona,0,0,0
+3,Fiorentina,Napoli,1,1,3
+3,Genoa,Como,0,1,1
+3,Hellas Verona,Cremonese,1,0,0
+3,Inter,Juventus,0,3,4
+3,Juventus,Inter,1,4,3
+3,Lazio,Sassuolo,0,0,1
+3,Lecce,Atalanta,0,1,4
+3,Milan,Bologna,1,1,0
+3,Napoli,Fiorentina,0,3,1
+3,Parma,Cagliari,0,0,2
+3,Pisa,Udinese,1,0,1
+3,Roma,Torino,1,0,1
+3,Sassuolo,Lazio,1,1,0
+3,Torino,Roma,0,1,0
+3,Udinese,Pisa,0,1,0
+4,Atalanta,Torino,0,3,0
+4,Bologna,Genoa,1,2,1
+4,Cagliari,Lecce,0,2,1
+4,Como,Fiorentina,0,2,1
+4,Cremonese,Parma,1,0,0
+4,Fiorentina,Como,1,1,2
+4,Genoa,Bologna,0,1,2
+4,Hellas Verona,Juventus,1,1,1
+4,Inter,Sassuolo,1,2,1
+4,Juventus,Hellas Verona,0,1,1
+4,Lazio,Roma,1,0,1
+4,Lecce,Cagliari,1,1,2
+4,Milan,Udinese,0,3,0
+4,Napoli,Pisa,1,3,2
+4,Parma,Cremonese,0,0,0
+4,Pisa,Napoli,0,2,3
+4,Roma,Lazio,0,1,0
+4,Sassuolo,Inter,0,1,2
+4,Torino,Atalanta,1,0,3
+4,Udinese,Milan,1,0,3
+5,Atalanta,Juventus,0,1,1
+5,Bologna,Lecce,0,2,2
+5,Cagliari,Inter,1,0,2
+5,Como,Cremonese,1,1,1
+5,Cremonese,Como,0,1,1
+5,Fiorentina,Pisa,0,0,0
+5,Genoa,Lazio,1,0,3
+5,Hellas Verona,Roma,0,0,2
+5,Inter,Cagliari,0,2,0
+5,Juventus,Atalanta,1,1,1
+5,Lazio,Genoa,0,3,0
+5,Lecce,Bologna,1,2,2
+5,Milan,Napoli,1,2,1
+5,Napoli,Milan,0,1,2
+5,Parma,Torino,1,2,1
+5,Pisa,Fiorentina,1,0,0
+5,Roma,Hellas Verona,1,2,0
+5,Sassuolo,Udinese,1,3,1
+5,Torino,Parma,0,1,2
+5,Udinese,Sassuolo,0,1,3
+6,Atalanta,Como,1,1,1
+6,Bologna,Pisa,1,4,0
+6,Cagliari,Udinese,0,1,1
+6,Como,Atalanta,0,1,1
+6,Cremonese,Inter,0,1,4
+6,Fiorentina,Roma,1,1,2
+6,Genoa,Napoli,0,1,2
+6,Hellas Verona,Sassuolo,1,0,1
+6,Inter,Cremonese,1,4,1
+6,Juventus,Milan,1,0,0
+6,Lazio,Torino,1,3,3
+6,Lecce,Parma,0,1,0
+6,Milan,Juventus,0,0,0
+6,Napoli,Genoa,1,2,1
+6,Parma,Lecce,1,0,1
+6,Pisa,Bologna,0,0,4
+6,Roma,Fiorentina,0,2,1
+6,Sassuolo,Hellas Verona,0,1,0
+6,Torino,Lazio,0,3,3
+6,Udinese,Cagliari,1,1,1
+7,Atalanta,Lazio,1,0,0
+7,Bologna,Cagliari,0,2,0
+7,Cagliari,Bologna,1,0,2
+7,Como,Juventus,1,2,0
+7,Cremonese,Udinese,1,1,1
+7,Fiorentina,Milan,0,1,2
+7,Genoa,Parma,1,0,0
+7,Hellas Verona,Pisa,0,0,0
+7,Inter,Roma,0,1,0
+7,Juventus,Como,0,0,2
+7,Lazio,Atalanta,0,0,0
+7,Lecce,Sassuolo,1,0,0
+7,Milan,Fiorentina,1,2,1
+7,Napoli,Torino,0,0,1
+7,Parma,Genoa,0,0,0
+7,Pisa,Hellas Verona,1,0,0
+7,Roma,Inter,1,0,1
+7,Sassuolo,Lecce,0,0,0
+7,Torino,Napoli,1,1,0
+7,Udinese,Cremonese,0,1,1
+8,Atalanta,Cremonese,0,1,1
+8,Bologna,Fiorentina,0,2,2
+8,Cagliari,Hellas Verona,0,2,2
+8,Como,Parma,0,0,0
+8,Cremonese,Atalanta,1,1,1
+8,Fiorentina,Bologna,1,2,2
+8,Genoa,Torino,0,1,2
+8,Hellas Verona,Cagliari,1,2,2
+8,Inter,Napoli,0,1,3
+8,Juventus,Lazio,0,0,1
+8,Lazio,Juventus,1,1,0
+8,Lecce,Udinese,0,2,3
+8,Milan,Pisa,1,2,2
+8,Napoli,Inter,1,3,1
+8,Parma,Como,1,0,0
+8,Pisa,Milan,0,2,2
+8,Roma,Sassuolo,0,1,0
+8,Sassuolo,Roma,1,0,1
+8,Torino,Genoa,1,2,1
+8,Udinese,Lecce,1,3,2
+9,Atalanta,Milan,1,1,1
+9,Bologna,Torino,1,0,0
+9,Cagliari,Sassuolo,1,1,2
+9,Como,Hellas Verona,1,3,1
+9,Cremonese,Genoa,0,2,0
+9,Fiorentina,Inter,0,0,3
+9,Genoa,Cremonese,1,0,2
+9,Hellas Verona,Como,0,1,3
+9,Inter,Fiorentina,1,3,0
+9,Juventus,Udinese,1,3,1
+9,Lazio,Pisa,0,0,0
+9,Lecce,Napoli,1,0,1
+9,Milan,Atalanta,0,1,1
+9,Napoli,Lecce,0,1,0
+9,Parma,Roma,0,1,2
+9,Pisa,Lazio,1,0,0
+9,Roma,Parma,1,2,1
+9,Sassuolo,Cagliari,0,2,1
+9,Torino,Bologna,0,0,0
+9,Udinese,Juventus,0,1,3
+10,Atalanta,Udinese,0,0,1
+10,Bologna,Parma,0,3,1
+10,Cagliari,Lazio,0,0,2
+10,Como,Napoli,0,0,0
+10,Cremonese,Juventus,1,1,2
+10,Fiorentina,Lecce,1,0,1
+10,Genoa,Sassuolo,0,2,1
+10,Hellas Verona,Inter,1,1,2
+10,Inter,Hellas Verona,0,2,1
+10,Juventus,Cremonese,0,2,1
+10,Lazio,Cagliari,1,2,0
+10,Lecce,Fiorentina,0,1,0
+10,Milan,Roma,1,1,0
+10,Napoli,Como,1,0,0
+10,Parma,Bologna,1,1,3
+10,Pisa,Torino,0,2,2
+10,Roma,Milan,0,0,1
+10,Sassuolo,Genoa,1,1,2
+10,Torino,Pisa,1,2,2
+10,Udinese,Atalanta,1,1,0
+11,Atalanta,Sassuolo,1,0,3
+11,Bologna,Napoli,1,2,0
+11,Cagliari,Como,0,0,0
+11,Como,Cagliari,1,0,0
+11,Cremonese,Pisa,0,0,1
+11,Fiorentina,Genoa,0,2,2
+11,Genoa,Fiorentina,1,2,2
+11,Hellas Verona,Lecce,0,0,0
+11,Inter,Lazio,1,2,0
+11,Juventus,Torino,1,0,0
+11,Lazio,Inter,0,0,2
+11,Lecce,Hellas Verona,1,0,0
+11,Milan,Parma,0,2,2
+11,Napoli,Bologna,0,0,2
+11,Parma,Milan,1,2,2
+11,Pisa,Cremonese,1,1,0
+11,Roma,Udinese,1,2,0
+11,Sassuolo,Atalanta,0,3,0
+11,Torino,Juventus,0,0,0
+11,Udinese,Roma,0,0,2
+12,Atalanta,Napoli,0,1,3
+12,Bologna,Udinese,0,3,0
+12,Cagliari,Genoa,1,3,3
+12,Como,Torino,0,5,1
+12,Cremonese,Roma,1,1,3
+12,Fiorentina,Juventus,1,1,1
+12,Genoa,Cagliari,0,3,3
+12,Hellas Verona,Parma,1,1,2
+12,Inter,Milan,1,0,1
+12,Juventus,Fiorentina,0,1,1
+12,Lazio,Lecce,1,2,0
+12,Lecce,Lazio,0,0,2
+12,Milan,Inter,0,1,0
+12,Napoli,Atalanta,1,3,1
+12,Parma,Hellas Verona,0,2,1
+12,Pisa,Sassuolo,0,2,2
+12,Roma,Cremonese,0,3,1
+12,Sassuolo,Pisa,1,2,2
+12,Torino,Como,1,1,5
+12,Udinese,Bologna,1,0,3
+13,Atalanta,Fiorentina,1,2,0
+13,Bologna,Cremonese,1,1,3
+13,Cagliari,Juventus,0,1,2
+13,Como,Sassuolo,1,2,0
+13,Cremonese,Bologna,0,3,1
+13,Fiorentina,Atalanta,0,0,2
+13,Genoa,Hellas Verona,1,2,1
+13,Hellas Verona,Genoa,0,1,2
+13,Inter,Pisa,0,2,0
+13,Juventus,Cagliari,1,2,1
+13,Lazio,Milan,0,0,1
+13,Lecce,Torino,1,2,1
+13,Milan,Lazio,1,1,0
+13,Napoli,Roma,0,1,0
+13,Parma,Udinese,1,0,2
+13,Pisa,Inter,1,0,2
+13,Roma,Napoli,1,0,1
+13,Sassuolo,Como,0,0,2
+13,Torino,Lecce,0,1,2
+13,Udinese,Parma,0,2,0
+14,Atalanta,Hellas Verona,0,1,3
+14,Bologna,Lazio,0,1,1
+14,Cagliari,Roma,1,1,0
+14,Como,Inter,0,0,4
+14,Cremonese,Lecce,1,2,0
+14,Fiorentina,Sassuolo,0,1,3
+14,Genoa,Udinese,0,2,1
+14,Hellas Verona,Atalanta,1,3,1
+14,Inter,Como,1,4,0
+14,Juventus,Napoli,0,1,2
+14,Lazio,Bologna,1,1,1
+14,Lecce,Cremonese,0,0,2
+14,Milan,Torino,0,3,2
+14,Napoli,Juventus,1,2,1
+14,Parma,Pisa,0,1,0
+14,Pisa,Parma,1,0,1
+14,Roma,Cagliari,0,0,1
+14,Sassuolo,Fiorentina,1,3,1
+14,Torino,Milan,1,2,3
+14,Udinese,Genoa,1,1,2
+15,Atalanta,Cagliari,1,2,1
+15,Bologna,Juventus,1,0,1
+15,Cagliari,Atalanta,0,1,2
+15,Como,Roma,0,0,1
+15,Cremonese,Torino,0,0,1
+15,Fiorentina,Hellas Verona,1,1,2
+15,Genoa,Inter,1,1,2
+15,Hellas Verona,Fiorentina,0,2,1
+15,Inter,Genoa,0,2,1
+15,Juventus,Bologna,0,1,0
+15,Lazio,Parma,0,1,0
+15,Lecce,Pisa,1,1,0
+15,Milan,Sassuolo,1,2,2
+15,Napoli,Udinese,0,0,1
+15,Parma,Lazio,1,0,1
+15,Pisa,Lecce,0,0,1
+15,Roma,Como,1,1,0
+15,Sassuolo,Milan,0,2,2
+15,Torino,Cremonese,1,1,0
+15,Udinese,Napoli,1,1,0
+16,Atalanta,Genoa,0,1,0
+16,Bologna,Hellas Verona,0,3,2
+16,Cagliari,Pisa,1,2,2
+16,Como,Milan,1,1,3
+16,Cremonese,Lazio,0,0,0
+16,Fiorentina,Udinese,1,5,1
+16,Genoa,Atalanta,1,0,1
+16,Hellas Verona,Bologna,1,2,3
+16,Inter,Lecce,1,1,0
+16,Juventus,Roma,1,2,1
+16,Lazio,Cremonese,1,0,0
+16,Lecce,Inter,0,0,1
+16,Milan,Como,0,3,1
+16,Napoli,Parma,1,0,0
+16,Parma,Napoli,0,0,0
+16,Pisa,Cagliari,0,2,2
+16,Roma,Juventus,0,1,2
+16,Sassuolo,Torino,1,0,1
+16,Torino,Sassuolo,0,1,0
+16,Udinese,Fiorentina,0,1,5
+17,Atalanta,Inter,1,0,1
+17,Bologna,Sassuolo,1,1,1
+17,Cagliari,Torino,0,2,1
+17,Como,Lecce,0,3,0
+17,Cremonese,Napoli,1,0,2
+17,Fiorentina,Parma,0,0,1
+17,Genoa,Roma,0,1,3
+17,Hellas Verona,Milan,0,0,3
+17,Inter,Atalanta,0,1,0
+17,Juventus,Pisa,0,2,0
+17,Lazio,Udinese,0,1,1
+17,Lecce,Como,1,0,3
+17,Milan,Hellas Verona,1,3,0
+17,Napoli,Cremonese,0,2,0
+17,Parma,Fiorentina,1,1,0
+17,Pisa,Juventus,1,0,2
+17,Roma,Genoa,1,3,1
+17,Sassuolo,Bologna,0,1,1
+17,Torino,Cagliari,1,1,2
+17,Udinese,Lazio,1,1,1
+18,Atalanta,Roma,1,1,0
+18,Bologna,Inter,0,1,3
+18,Cagliari,Milan,1,0,1
+18,Como,Udinese,1,1,0
+18,Cremonese,Fiorentina,0,0,1
+18,Fiorentina,Cremonese,1,1,0
+18,Genoa,Pisa,1,1,1
+18,Hellas Verona,Torino,1,0,3
+18,Inter,Bologna,1,3,1
+18,Juventus,Lecce,1,1,1
+18,Lazio,Napoli,1,0,2
+18,Lecce,Juventus,0,1,1
+18,Milan,Cagliari,0,1,0
+18,Napoli,Lazio,0,2,0
+18,Parma,Sassuolo,0,1,1
+18,Pisa,Genoa,0,1,1
+18,Roma,Atalanta,0,0,1
+18,Sassuolo,Parma,1,1,1
+18,Torino,Hellas Verona,0,3,0
+18,Udinese,Como,0,0,1
+19,Atalanta,Bologna,0,2,0
+19,Bologna,Atalanta,1,0,2
+19,Cagliari,Cremonese,0,2,2
+19,Como,Pisa,0,3,0
+19,Cremonese,Cagliari,1,2,2
+19,Fiorentina,Lazio,0,2,2
+19,Genoa,Milan,0,1,1
+19,Hellas Verona,Napoli,0,2,2
+19,Inter,Parma,0,2,0
+19,Juventus,Sassuolo,0,3,0
+19,Lazio,Fiorentina,1,2,2
+19,Lecce,Roma,1,0,2
+19,Milan,Genoa,1,1,1
+19,Napoli,Hellas Verona,1,2,2
+19,Parma,Inter,1,0,2
+19,Pisa,Como,1,0,3
+19,Roma,Lecce,0,2,0
+19,Sassuolo,Juventus,1,0,3
+19,Torino,Udinese,1,1,2
+19,Udinese,Torino,0,2,1
+20,Atalanta,Torino,1,2,0
+20,Bologna,Como,0,1,1
+20,Cagliari,Genoa,0,0,3
+20,Como,Bologna,1,1,1
+20,Cremonese,Juventus,0,0,5
+20,Fiorentina,Milan,1,1,1
+20,Genoa,Cagliari,1,3,0
+20,Hellas Verona,Lazio,1,0,1
+20,Inter,Napoli,1,2,2
+20,Juventus,Cremonese,1,5,0
+20,Lazio,Hellas Verona,0,1,0
+20,Lecce,Parma,1,1,2
+20,Milan,Fiorentina,0,1,1
+20,Napoli,Inter,0,2,2
+20,Parma,Lecce,0,2,1
+20,Pisa,Udinese,0,2,2
+20,Roma,Sassuolo,1,2,0
+20,Sassuolo,Roma,0,0,2
+20,Torino,Atalanta,0,0,2
+20,Udinese,Pisa,1,2,2
+21,Atalanta,Pisa,0,1,1
+21,Bologna,Fiorentina,1,1,2
+21,Cagliari,Juventus,1,1,0
+21,Como,Lazio,0,3,0
+21,Cremonese,Hellas Verona,1,0,0
+21,Fiorentina,Bologna,0,2,1
+21,Genoa,Parma,0,0,0
+21,Hellas Verona,Cremonese,0,0,0
+21,Inter,Udinese,0,1,0
+21,Juventus,Cagliari,0,0,1
+21,Lazio,Como,1,0,3
+21,Lecce,Milan,0,0,1
+21,Milan,Lecce,1,1,0
+21,Napoli,Sassuolo,1,1,0
+21,Parma,Genoa,1,0,0
+21,Pisa,Atalanta,1,1,1
+21,Roma,Torino,0,2,0
+21,Sassuolo,Napoli,0,0,1
+21,Torino,Roma,1,0,2
+21,Udinese,Inter,1,0,1
+22,Atalanta,Parma,1,4,0
+22,Bologna,Genoa,0,2,3
+22,Cagliari,Fiorentina,0,2,1
+22,Como,Torino,1,6,0
+22,Cremonese,Sassuolo,0,0,1
+22,Fiorentina,Cagliari,1,1,2
+22,Genoa,Bologna,1,3,2
+22,Hellas Verona,Udinese,1,1,3
+22,Inter,Pisa,1,6,2
+22,Juventus,Napoli,1,3,0
+22,Lazio,Lecce,0,0,0
+22,Lecce,Lazio,1,0,0
+22,Milan,Roma,0,1,1
+22,Napoli,Juventus,0,0,3
+22,Parma,Atalanta,0,0,4
+22,Pisa,Inter,0,2,6
+22,Roma,Milan,1,1,1
+22,Sassuolo,Cremonese,1,1,0
+22,Torino,Como,0,0,6
+22,Udinese,Hellas Verona,0,3,1
+23,Atalanta,Como,0,0,0
+23,Bologna,Milan,1,0,3
+23,Cagliari,Hellas Verona,1,4,0
+23,Como,Atalanta,1,0,0
+23,Cremonese,Inter,1,0,2
+23,Fiorentina,Napoli,0,1,2
+23,Genoa,Lazio,0,2,3
+23,Hellas Verona,Cagliari,0,0,4
+23,Inter,Cremonese,0,2,0
+23,Juventus,Parma,0,4,1
+23,Lazio,Genoa,1,3,2
+23,Lecce,Torino,0,0,1
+23,Milan,Bologna,0,3,0
+23,Napoli,Fiorentina,1,2,1
+23,Parma,Juventus,1,1,4
+23,Pisa,Sassuolo,1,1,3
+23,Roma,Udinese,0,0,1
+23,Sassuolo,Pisa,0,3,1
+23,Torino,Lecce,1,1,0
+23,Udinese,Roma,1,1,0
+24,Atalanta,Cremonese,1,2,1
+24,Bologna,Parma,1,0,1
+24,Cagliari,Roma,0,0,2
+24,Como,Milan,0,1,1
+24,Cremonese,Atalanta,0,1,2
+24,Fiorentina,Torino,1,2,2
+24,Genoa,Napoli,1,2,3
+24,Hellas Verona,Pisa,1,0,0
+24,Inter,Sassuolo,0,5,0
+24,Juventus,Lazio,1,2,2
+24,Lazio,Juventus,0,2,2
+24,Lecce,Udinese,1,2,1
+24,Milan,Como,1,1,1
+24,Napoli,Genoa,0,3,2
+24,Parma,Bologna,0,1,0
+24,Pisa,Hellas Verona,0,0,0
+24,Roma,Cagliari,1,2,0
+24,Sassuolo,Inter,1,0,5
+24,Torino,Fiorentina,0,2,2
+24,Udinese,Lecce,0,1,2
+25,Atalanta,Lazio,0,2,0
+25,Bologna,Torino,0,2,1
+25,Cagliari,Lecce,1,0,2
+25,Como,Fiorentina,1,1,2
+25,Cremonese,Genoa,1,0,0
+25,Fiorentina,Como,0,2,1
+25,Genoa,Cremonese,0,0,0
+25,Hellas Verona,Parma,0,1,2
+25,Inter,Juventus,1,3,2
+25,Juventus,Inter,0,2,3
+25,Lazio,Atalanta,1,0,2
+25,Lecce,Cagliari,0,2,0
+25,Milan,Pisa,0,2,1
+25,Napoli,Roma,1,2,2
+25,Parma,Hellas Verona,1,2,1
+25,Pisa,Milan,1,1,2
+25,Roma,Napoli,0,2,2
+25,Sassuolo,Udinese,0,2,1
+25,Torino,Bologna,1,1,2
+25,Udinese,Sassuolo,1,1,2
+26,Atalanta,Napoli,1,2,1
+26,Bologna,Udinese,1,1,0
+26,Cagliari,Lazio,1,0,0
+26,Como,Juventus,0,2,0
+26,Cremonese,Roma,0,0,3
+26,Fiorentina,Pisa,1,1,0
+26,Genoa,Torino,1,3,0
+26,Hellas Verona,Sassuolo,0,0,3
+26,Inter,Lecce,0,2,0
+26,Juventus,Como,1,0,2
+26,Lazio,Cagliari,0,0,0
+26,Lecce,Inter,1,0,2
+26,Milan,Parma,1,0,1
+26,Napoli,Atalanta,0,1,2
+26,Parma,Milan,0,1,0
+26,Pisa,Fiorentina,0,0,1
+26,Roma,Cremonese,1,3,0
+26,Sassuolo,Hellas Verona,1,3,0
+26,Torino,Genoa,0,0,3
+26,Udinese,Bologna,0,0,1
+27,Atalanta,Sassuolo,0,1,2
+27,Bologna,Pisa,0,1,0
+27,Cagliari,Parma,0,1,1
+27,Como,Lecce,1,3,1
+27,Cremonese,Milan,1,0,2
+27,Fiorentina,Udinese,0,0,3
+27,Genoa,Inter,0,0,2
+27,Hellas Verona,Napoli,1,1,2
+27,Inter,Genoa,1,2,0
+27,Juventus,Roma,0,3,3
+27,Lazio,Torino,0,0,2
+27,Lecce,Como,0,1,3
+27,Milan,Cremonese,0,2,0
+27,Napoli,Hellas Verona,0,2,1
+27,Parma,Cagliari,1,1,1
+27,Pisa,Bologna,1,0,1
+27,Roma,Juventus,1,3,3
+27,Sassuolo,Atalanta,1,2,1
+27,Torino,Lazio,1,2,0
+27,Udinese,Fiorentina,1,3,0
+28,Atalanta,Udinese,1,2,2
+28,Bologna,Hellas Verona,1,1,2
+28,Cagliari,Como,1,1,2
+28,Como,Cagliari,0,2,1
+28,Cremonese,Lecce,0,1,2
+28,Fiorentina,Parma,1,0,0
+28,Genoa,Roma,1,2,1
+28,Hellas Verona,Bologna,0,2,1
+28,Inter,Milan,0,0,1
+28,Juventus,Pisa,1,4,0
+28,Lazio,Sassuolo,1,2,1
+28,Lecce,Cremonese,1,2,1
+28,Milan,Inter,1,1,0
+28,Napoli,Torino,1,2,1
+28,Parma,Fiorentina,0,0,0
+28,Pisa,Juventus,0,0,4
+28,Roma,Genoa,0,1,2
+28,Sassuolo,Lazio,0,1,2
+28,Torino,Napoli,0,1,2
+28,Udinese,Atalanta,0,2,2
+29,Atalanta,Inter,0,1,1
+29,Bologna,Sassuolo,0,1,0
+29,Cagliari,Pisa,0,1,3
+29,Como,Roma,1,2,1
+29,Cremonese,Fiorentina,1,1,4
+29,Fiorentina,Cremonese,0,4,1
+29,Genoa,Hellas Verona,0,2,0
+29,Hellas Verona,Genoa,1,0,2
+29,Inter,Atalanta,1,1,1
+29,Juventus,Udinese,0,1,0
+29,Lazio,Milan,1,1,0
+29,Lecce,Napoli,0,1,2
+29,Milan,Lazio,0,0,1
+29,Napoli,Lecce,1,2,1
+29,Parma,Torino,0,1,4
+29,Pisa,Cagliari,1,3,1
+29,Roma,Como,0,1,2
+29,Sassuolo,Bologna,1,0,1
+29,Torino,Parma,1,4,1
+29,Udinese,Juventus,1,0,1
+30,Atalanta,Hellas Verona,1,1,0
+30,Bologna,Lazio,1,0,2
+30,Cagliari,Napoli,1,0,1
+30,Como,Pisa,1,5,0
+30,Cremonese,Parma,0,2,0
+30,Fiorentina,Inter,1,1,1
+30,Genoa,Udinese,1,0,2
+30,Hellas Verona,Atalanta,0,0,1
+30,Inter,Fiorentina,0,1,1
+30,Juventus,Sassuolo,1,1,1
+30,Lazio,Bologna,0,2,0
+30,Lecce,Roma,0,0,1
+30,Milan,Torino,1,3,2
+30,Napoli,Cagliari,0,1,0
+30,Parma,Cremonese,1,0,2
+30,Pisa,Como,0,0,5
+30,Roma,Lecce,1,1,0
+30,Sassuolo,Juventus,0,1,1
+30,Torino,Milan,0,2,3
+30,Udinese,Genoa,0,2,0
+31,Atalanta,Lecce,0,3,0
+31,Bologna,Cremonese,0,2,1
+31,Cagliari,Sassuolo,0,1,2
+31,Como,Udinese,0,0,0
+31,Cremonese,Bologna,1,1,2
+31,Fiorentina,Hellas Verona,0,1,0
+31,Genoa,Juventus,0,0,2
+31,Hellas Verona,Fiorentina,1,0,1
+31,Inter,Roma,1,5,2
+31,Juventus,Genoa,1,2,0
+31,Lazio,Parma,1,1,1
+31,Lecce,Atalanta,1,0,3
+31,Milan,Napoli,0,0,1
+31,Napoli,Milan,1,1,0
+31,Parma,Lazio,0,1,1
+31,Pisa,Torino,1,0,1
+31,Roma,Inter,0,2,5
+31,Sassuolo,Cagliari,1,2,1
+31,Torino,Pisa,0,1,0
+31,Udinese,Como,1,0,0
+32,Atalanta,Juventus,1,0,1
+32,Bologna,Lecce,1,2,0
+32,Cagliari,Cremonese,1,1,0
+32,Como,Inter,1,3,4
+32,Cremonese,Cagliari,0,0,1
+32,Fiorentina,Lazio,1,1,0
+32,Genoa,Sassuolo,1,2,1
+32,Hellas Verona,Torino,0,1,2
+32,Inter,Como,0,4,3
+32,Juventus,Atalanta,0,1,0
+32,Lazio,Fiorentina,0,0,1
+32,Lecce,Bologna,0,0,2
+32,Milan,Udinese,1,0,3
+32,Napoli,Parma,0,1,1
+32,Parma,Napoli,1,1,1
+32,Pisa,Roma,0,0,3
+32,Roma,Pisa,1,3,0
+32,Sassuolo,Genoa,0,1,2
+32,Torino,Hellas Verona,1,2,1
+32,Udinese,Milan,0,3,0
+33,Atalanta,Roma,0,1,1
+33,Bologna,Juventus,0,0,2
+33,Cagliari,Inter,0,0,3
+33,Como,Sassuolo,0,1,2
+33,Cremonese,Torino,1,0,0
+33,Fiorentina,Lecce,0,1,1
+33,Genoa,Pisa,0,2,1
+33,Hellas Verona,Milan,1,0,1
+33,Inter,Cagliari,1,3,0
+33,Juventus,Bologna,1,2,0
+33,Lazio,Napoli,0,2,0
+33,Lecce,Fiorentina,1,1,1
+33,Milan,Hellas Verona,0,1,0
+33,Napoli,Lazio,1,0,2
+33,Parma,Udinese,0,1,0
+33,Pisa,Genoa,1,1,2
+33,Roma,Atalanta,1,1,1
+33,Sassuolo,Como,1,2,1
+33,Torino,Cremonese,0,0,0
+33,Udinese,Parma,1,0,1
+34,Atalanta,Cagliari,0,2,3
+34,Bologna,Roma,1,0,2
+34,Cagliari,Atalanta,1,3,2
+34,Como,Genoa,0,2,0
+34,Cremonese,Napoli,0,0,4
+34,Fiorentina,Sassuolo,1,0,0
+34,Genoa,Como,1,0,2
+34,Hellas Verona,Lecce,1,0,0
+34,Inter,Torino,0,2,2
+34,Juventus,Milan,0,0,0
+34,Lazio,Udinese,1,3,3
+34,Lecce,Hellas Verona,0,0,0
+34,Milan,Juventus,1,0,0
+34,Napoli,Cremonese,1,4,0
+34,Parma,Pisa,1,1,0
+34,Pisa,Parma,0,0,1
+34,Roma,Bologna,0,2,0
+34,Sassuolo,Fiorentina,0,0,0
+34,Torino,Inter,1,2,2
+34,Udinese,Lazio,0,3,3
+35,Atalanta,Genoa,1,0,0
+35,Bologna,Cagliari,1,0,0
+35,Cagliari,Bologna,0,0,0
+35,Como,Napoli,1,0,0
+35,Cremonese,Lazio,1,1,2
+35,Fiorentina,Roma,0,0,4
+35,Genoa,Atalanta,0,0,0
+35,Hellas Verona,Juventus,0,1,1
+35,Inter,Parma,1,2,0
+35,Juventus,Hellas Verona,1,1,1
+35,Lazio,Cremonese,0,2,1
+35,Lecce,Pisa,0,2,1
+35,Milan,Sassuolo,0,0,2
+35,Napoli,Como,0,0,0
+35,Parma,Inter,0,0,2
+35,Pisa,Lecce,1,1,2
+35,Roma,Fiorentina,1,4,0
+35,Sassuolo,Milan,1,2,0
+35,Torino,Udinese,0,0,2
+35,Udinese,Torino,1,2,0
+36,Atalanta,Milan,0,3,2
+36,Bologna,Napoli,0,3,2
+36,Cagliari,Udinese,1,0,2
+36,Como,Hellas Verona,0,1,0
+36,Cremonese,Pisa,1,3,0
+36,Fiorentina,Genoa,1,0,0
+36,Genoa,Fiorentina,0,0,0
+36,Hellas Verona,Como,1,0,1
+36,Inter,Lazio,0,3,0
+36,Juventus,Lecce,0,1,0
+36,Lazio,Inter,1,0,3
+36,Lecce,Juventus,1,0,1
+36,Milan,Atalanta,1,2,3
+36,Napoli,Bologna,1,2,3
+36,Parma,Roma,1,2,3
+36,Pisa,Cremonese,0,0,3
+36,Roma,Parma,0,3,2
+36,Sassuolo,Torino,0,1,2
+36,Torino,Sassuolo,1,2,1
+36,Udinese,Cagliari,0,2,0
+37,Atalanta,Bologna,1,0,1
+37,Bologna,Atalanta,0,1,0
+37,Cagliari,Torino,1,2,1
+37,Como,Parma,1,1,0
+37,Cremonese,Udinese,0,1,0
+37,Fiorentina,Juventus,0,2,0
+37,Genoa,Milan,1,1,2
+37,Hellas Verona,Inter,0,1,1
+37,Inter,Hellas Verona,1,1,1
+37,Juventus,Fiorentina,1,0,2
+37,Lazio,Roma,0,0,2
+37,Lecce,Sassuolo,0,3,2
+37,Milan,Genoa,0,2,1
+37,Napoli,Pisa,0,3,0
+37,Parma,Como,0,0,1
+37,Pisa,Napoli,1,0,3
+37,Roma,Lazio,1,2,0
+37,Sassuolo,Lecce,1,2,3
+37,Torino,Cagliari,0,1,2
+37,Udinese,Cremonese,1,0,1
+38,Atalanta,Fiorentina,0,1,1
+38,Bologna,Inter,1,3,3
+38,Cagliari,Milan,0,2,1
+38,Como,Cremonese,0,4,1
+38,Cremonese,Como,1,1,4
+38,Fiorentina,Atalanta,1,1,1
+38,Genoa,Lecce,0,0,1
+38,Hellas Verona,Roma,1,0,2
+38,Inter,Bologna,0,3,3
+38,Juventus,Torino,0,2,2
+38,Lazio,Pisa,1,2,1
+38,Lecce,Genoa,1,1,0
+38,Milan,Cagliari,1,1,2
+38,Napoli,Udinese,1,1,0
+38,Parma,Sassuolo,1,1,0
+38,Pisa,Lazio,0,1,2
+38,Roma,Hellas Verona,0,2,0
+38,Sassuolo,Parma,0,0,1
+38,Torino,Juventus,1,2,2
+38,Udinese,Napoli,0,0,1

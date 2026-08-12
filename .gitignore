@@ -1,0 +1,7 @@
+.venv/
+.ipynb_checkpoints/
+tmp/
+.codegraph/
+__pycache__/
+*.pyc
+.env
