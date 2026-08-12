@@ -37,8 +37,31 @@ Values live in DOM attributes: `.player-grade[data-value]` (voto),
 Consolidated to `fantacalcio/season2425/voti_scraped.csv` and `season2526/`
 (cols: matchday, team, player, role, vote, fantavote, +_raw). ~12.6k rows/season.
 
-## STILL NEEDED
-- Quotazioni_Fantacalcio.xlsx (player prices/list) for current season.
-- seriea_calendar.xlsx (fixtures -> oppteam/home) for 2024-25, 2025-26, 2026-27.
-- Integration: adapt nb2/nb3/nb4 to consume voti_scraped.csv + the assembled
-  fbref/Understat CSVs (the old nb2 parses fantacalcio's Excel export layout).
+## match scores (GK clean-sheet target)
+`fetch_scores.py` pulls per-match Serie A final scores from **OpenFootball**
+`football.json` (free, no key, plain `requests`, exact FT scores) ->
+`fantacalcio/season<SS>/match_scores.csv` (matchday, team, oppteam, home,
+goals_for, goals_against). Understat no longer serves match-level data (only
+per-player season aggregates), hence OpenFootball. 2024-25 (`2425`) has md1-37
+only (OpenFootball hasn't filled the final round); `2526` is complete.
+
+## dataset build + training (integration)
+`build_lib.py` ports nb2/nb3b/nb4b to the normalized inputs (voti_scraped +
+fixtures + match_scores + assembled fbref CSVs), replacing the old Excel-export +
+Quotazioni layout. `features.py` holds the model feature lists (auto-extracted
+from nb4b so build_lib and the notebooks share one definition). Notebooks 2/3/3b/
+4/4b are thin, runnable wrappers over `build_lib` (season-aware via
+`config.season_dir`; nb3/nb4 build the current season, guarded until its inputs
+exist; nb3b/4b build the training seasons). Outputs land in
+`mid_outputs/season<SS>/` and positionally schema-match golden `season2223`.
+
+`train_models.py` is the executable, validated core of the nb6 TFP removal:
+retrains the outfield + goalkeeper models with `fantabeto_dist` (SinhArcsinh NLL
+loss + sigmoid/binary-crossentropy clean sheet) on 2223+2425+2526 and writes
+`saves/*.weights.h5` + scalers. nb6/nb7 contain the same TFP-free logic.
+
+## STILL NEEDED (current-season 2026/27 prediction)
+- Current-season inputs (voti_scraped, fixtures, match_scores, fbref) + build via
+  nb2/nb3/nb4 once the season starts.
+- Quotazioni_Fantacalcio.xlsx (player prices, for display) for the current season.
+- nb5 probable lineups, then nb6 prediction + nb7 simulation.
