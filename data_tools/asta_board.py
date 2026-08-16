@@ -122,8 +122,10 @@ def build(out="fantacalcio/asta_board_2627.xlsx"):
     board["proj_pts"] = (board["exp_FV"] * board["apps25"]).round(0)
     board["value"] = (board["proj_pts"] / board["price"].clip(lower=1)).round(1)
     board["exp_FV"] = board["exp_FV"].round(2)
-    # nailed starter = played >= 25 last season
-    board["starter"] = board["apps25"] >= 25
+    # starter likelihood from 2025/26 appearances (fbref minutes are stripped/0,
+    # but games/gk_games are reliable). Proxy -> confirm vs 'probabili formazioni'.
+    board["role_lock"] = [_lock(a, r) for a, r in zip(board.apps25, board.r)]
+    board["starter"] = board.role_lock.isin(["nailed", "likely"])
 
     board["source"] = "model"
 
@@ -141,6 +143,9 @@ def build(out="fantacalcio/asta_board_2627.xlsx"):
         lambda x: round(float(np.clip(fit[x.r][0] * x.fvm + fit[x.r][1], 90, 260))), axis=1)
     miss["value"] = (miss.proj_pts / miss.price.clip(lower=1)).round(1)
     miss["starter"] = False
+    # no last-season minutes -> infer role from price band (fantacalcio's own read)
+    miss["role_lock"] = miss.price.apply(
+        lambda p: "nailed?" if p >= 10 else ("rotation?" if p >= 4 else "unknown"))
     miss["source"] = "fvm"
 
     full = pd.concat([board, miss], ignore_index=True)
@@ -149,9 +154,21 @@ def build(out="fantacalcio/asta_board_2627.xlsx"):
     order = {"must-have": 0, "value": 1, "sleeper": 2, "unrated": 3, "filler": 4, "avoid": 5}
     full["_t"] = full.tier.map(order)
     full = full.sort_values(["r", "_t", "value"], ascending=[True, True, False]).drop(columns="_t")
-    cols = ["name", "team", "r", "tier", "price", "apps25", "exp_FV", "proj_pts", "value",
-            "clean_sheet_pct", "fvm", "source"]
+    cols = ["name", "team", "r", "tier", "role_lock", "price", "apps25", "exp_FV",
+            "proj_pts", "value", "clean_sheet_pct", "fvm", "source"]
     full = full[cols]
+
+    # overlay live round-1 probabili formazioni if scraped (real 2026/27 starters)
+    prob = "fantacalcio/probabili_2627.csv"
+    if os.path.exists(prob):
+        full = full.merge(pd.read_csv(prob)[["name", "r1"]], on="name", how="left")
+        full["r1"] = full["r1"].fillna("")
+        fade = full[full.tier.isin(["must-have", "value"]) & full.r1.isin(["INJURED", "SUSPENDED", "DOUBT"])]
+        if len(fade):
+            print(f"\n!! {len(fade)} top-tier picks flagged in round-1 probabili (temp — check before bidding):")
+            print(fade[["name", "team", "r", "tier", "r1"]].to_string(index=False))
+    else:
+        full["r1"] = ""
 
     with pd.ExcelWriter(out) as w:
         full.to_excel(w, sheet_name="board", index=False)
@@ -163,9 +180,16 @@ def build(out="fantacalcio/asta_board_2627.xlsx"):
     for role, label in [("P", "GK"), ("D", "DEF"), ("C", "MID"), ("A", "ATT")]:
         print(f"\n=== {label} — MUST-HAVE + top VALUE ===")
         sub = full[(full.r == role) & (full.tier.isin(["must-have", "value"]))].head(14)
-        c = ["name", "team", "tier", "price", "apps25", "proj_pts", "value", "source"] + (["clean_sheet_pct"] if role == "P" else [])
+        c = ["name", "team", "tier", "role_lock", "price", "apps25", "proj_pts", "value", "source"] + (["clean_sheet_pct"] if role == "P" else [])
         print(sub[c].to_string(index=False))
     return full
+
+
+def _lock(apps, role):
+    """Starter likelihood from 2025/26 appearances (fbref minutes are unreliable)."""
+    if role == "P":
+        return "nailed" if apps >= 25 else "likely" if apps >= 12 else "rotation" if apps >= 4 else "bench"
+    return "nailed" if apps >= 28 else "likely" if apps >= 18 else "rotation" if apps >= 8 else "bench"
 
 
 def _assign_tiers(full):
@@ -181,15 +205,16 @@ def _assign_tiers(full):
         # FVM-estimated players have no real playing-time signal; only let them
         # into the top tiers when the price itself implies a starter (>= 6).
         credible = (sub.source == "model") | (sub.price >= 6)
+        not_bench = sub.role_lock != "bench"          # confirmed non-starters never top-tier
         t = pd.Series("filler", index=sub.index)
         # cheap + upside/uncertain (rookies, rotation, FVM-scored) with a real floor
-        t[(sub.price <= 6) & ((~sub.starter) | (sub.source == "fvm")) & (pproj >= 0.45)] = "sleeper"
-        # underpriced real production
-        t[(pval >= 0.70) & (sub.proj_pts >= med_proj) & credible] = "value"
+        t[(sub.price <= 6) & ((~sub.starter) | (sub.source == "fvm")) & (pproj >= 0.45) & not_bench] = "sleeper"
+        # underpriced real production, from a likely starter
+        t[(pval >= 0.70) & (sub.proj_pts >= med_proj) & credible & not_bench] = "value"
         # premium price, weak value
         t[(sub.price >= price_hi) & (pval <= 0.30)] = "avoid"
         # top producers you build the roster around
-        t[(pproj >= 0.85) & credible] = "must-have"
+        t[(pproj >= 0.85) & credible & not_bench] = "must-have"
         # the model can't judge FVM-only players (new to Serie A / promoted squads);
         # never call them 'avoid'/'filler' -> 'unrated' (lean on price + your read).
         t[(sub.source == "fvm") & t.isin(["avoid", "filler"])] = "unrated"
