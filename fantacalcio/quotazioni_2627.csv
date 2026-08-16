@@ -10,7 +10,7 @@ id,r,name,team,price,fvm
 12,A,Ramos G.,Milan,27.0,232.0
 2,C,Orsolini,Bologna,26.0,200.0
 10,A,Kolo Muani,Juventus,26.0,225.0
-6,A,Kean,Fiorentina,25.0,212.0
+6,A,Kean,Fiorentina,25.0,200.0
 12,C,Pulisic,Milan,25.0,180.0
 10,A,Yildiz,Juventus,23.0,192.0
 12,C,Rabiot,Milan,22.0,128.0
@@ -32,7 +32,7 @@ id,r,name,team,price,fvm
 10,C,McKennie,Juventus,17.0,68.0
 15,D,Wesley,Roma,17.0,83.0
 1,P,Carnesecchi,Atalanta,16.0,52.0
-2,A,Dovbyk,Bologna,16.0,84.0
+2,A,Dovbyk,Bologna,16.0,73.0
 153,P,Butez,Como,16.0,56.0
 9,D,Akanji,Inter,16.0,55.0
 9,A,Esposito F.P.,Inter,16.0,93.0
@@ -40,7 +40,7 @@ id,r,name,team,price,fvm
 10,D,Bremer,Juventus,15.0,50.0
 12,P,Maignan,Milan,15.0,50.0
 13,C,De Bruyne,Napoli,15.0,98.0
-107,A,Pellegrino M.,Parma,15.0,81.0
+6,A,Pellegrino M.,Fiorentina,15.0,60.0
 15,D,Mancini,Roma,15.0,49.0
 17,A,Laurientè,Sassuolo,15.0,88.0
 18,A,Simeone,Torino,15.0,82.0
@@ -52,12 +52,12 @@ id,r,name,team,price,fvm
 15,A,Castro S.,Roma,14.0,81.0
 18,C,Vlasic,Torino,14.0,80.0
 1,A,Raspadori,Atalanta,13.0,62.0
-21,A,Esposito Se.,Cagliari,13.0,50.0
+21,A,Esposito Se.,Cagliari,13.0,40.0
 6,P,De Gea,Fiorentina,13.0,45.0
 6,C,Gudmundsson A.,Fiorentina,13.0,61.0
 10,D,Kalulu,Juventus,13.0,46.0
 11,C,Taylor K.,Lazio,13.0,64.0
-12,A,Nkunku,Milan,13.0,52.0
+12,A,Nkunku,Milan,13.0,25.0
 15,D,N'Dicka,Roma,13.0,44.0
 17,A,Pinamonti,Sassuolo,13.0,55.0
 19,D,Solet,Udinese,13.0,46.0
@@ -74,6 +74,7 @@ id,r,name,team,price,fvm
 15,A,Soulè,Roma,12.0,53.0
 138,A,Adams A.,Venezia,12.0,51.0
 6,C,Mastantuono,Fiorentina,12.0,58.0
+9,D,Spence,Inter,12.0,41.0
 2,C,Rowe,Bologna,11.0,37.0
 153,A,Diao,Como,11.0,50.0
 8,D,Ostigard,Genoa,11.0,40.0
@@ -102,6 +103,7 @@ id,r,name,team,price,fvm
 18,C,Casadei,Torino,10.0,37.0
 19,C,Ekkelenkamp,Udinese,10.0,41.0
 15,C,Pellegrini Lo.,Roma,10.0,28.0
+107,A,Romero D.,Parma,10.0,38.0
 1,C,Pasalic,Atalanta,9.0,32.0
 2,C,Bernardeschi,Bologna,9.0,21.0
 21,P,Caprile,Cagliari,9.0,27.0
@@ -126,19 +128,19 @@ id,r,name,team,price,fvm
 2,D,Miranda J.,Bologna,8.0,24.0
 2,C,Odgaard,Bologna,8.0,22.0
 2,C,Cambiaghi,Bologna,8.0,25.0
-2,A,Dallinga,Bologna,8.0,23.0
+2,A,Dallinga,Bologna,8.0,10.0
 21,D,Mina,Cagliari,8.0,20.0
 6,D,Dragusin,Fiorentina,8.0,27.0
 6,D,Jimenez A.,Fiorentina,8.0,23.0
 6,C,Fagioli,Fiorentina,8.0,23.0
 6,C,Ndour,Fiorentina,8.0,25.0
-6,A,Piccoli,Fiorentina,8.0,24.0
+2,A,Piccoli,Bologna,8.0,31.0
 8,P,Bijlow,Genoa,8.0,18.0
 8,D,Norton-Cuffy,Genoa,8.0,22.0
 8,A,Vitinha O.,Genoa,8.0,20.0
 9,C,Diouf,Inter,8.0,37.0
 9,C,Sucic P.,Inter,8.0,26.0
-10,D,Celik,Juventus,8.0,21.0
+10,D,Celik,Juventus,8.0,13.0
 10,C,Locatelli,Juventus,8.0,32.0
 119,P,Falcone,Lecce,8.0,25.0
 12,D,Bartesaghi,Milan,8.0,25.0
@@ -165,16 +167,16 @@ id,r,name,team,price,fvm
 7,A,Raimondo,Frosinone,7.0,24.0
 8,C,Frendrup,Genoa,7.0,19.0
 9,D,Carlos Augusto,Inter,7.0,27.0
-9,C,Frattesi,Inter,7.0,13.0
+11,C,Frattesi,Lazio,7.0,55.0
 9,A,Bonny,Inter,7.0,21.0
 11,D,Doekhi,Lazio,7.0,22.0
 11,D,Romagnoli,Lazio,7.0,24.0
 119,D,Tiago Gabriel,Lecce,7.0,17.0
 119,A,Stulic,Lecce,7.0,18.0
-12,D,Gabbia,Milan,7.0,23.0
-12,D,Tomori,Milan,7.0,20.0
-143,C,Pessina,Monza,7.0,20.0
-13,D,Buongiorno,Napoli,7.0,18.0
+12,D,Gabbia,Milan,7.0,25.0
+12,D,Tomori,Milan,7.0,11.0
+143,C,Pessina,Monza,7.0,15.0
+13,D,Buongiorno,Napoli,7.0,15.0
 13,C,Lobotka,Napoli,7.0,20.0
 107,P,Daffara,Parma,7.0,5.0
 107,P,Suzuki,Parma,7.0,20.0
@@ -186,7 +188,7 @@ id,r,name,team,price,fvm
 18,D,Ismajli,Torino,7.0,18.0
 18,C,Oristanio,Torino,7.0,27.0
 18,A,Zapata D.,Torino,7.0,18.0
-19,D,Kristensen T.,Udinese,7.0,15.0
+1,D,Kristensen T.,Atalanta,7.0,20.0
 19,C,Unai Gomez,Udinese,7.0,23.0
 8,C,Sow,Genoa,7.0,14.0
 1,D,Ahanor,Atalanta,6.0,16.0
@@ -199,7 +201,7 @@ id,r,name,team,price,fvm
 2,C,Pobega,Bologna,6.0,14.0
 21,C,Adopo,Cagliari,6.0,13.0
 21,C,Winks,Cagliari,6.0,14.0
-21,A,Mutandwa,Cagliari,6.0,19.0
+21,A,Mutandwa,Cagliari,6.0,15.0
 153,D,Valle,Como,6.0,18.0
 153,C,Caqueret,Como,6.0,20.0
 153,C,Liberali,Como,6.0,22.0
@@ -224,7 +226,7 @@ id,r,name,team,price,fvm
 12,A,Gimenez,Milan,6.0,14.0
 143,D,Mangas,Monza,6.0,15.0
 143,C,Akinsanmiro,Monza,6.0,16.0
-13,D,Beukema,Napoli,6.0,16.0
+13,D,Beukema,Napoli,6.0,13.0
 13,A,Neres,Napoli,6.0,22.0
 107,D,Circati,Parma,6.0,18.0
 107,C,Nicolussi Caviglia,Parma,6.0,18.0
@@ -234,8 +236,9 @@ id,r,name,team,price,fvm
 138,P,Stankovic F.,Venezia,6.0,14.0
 138,D,Bella-Kotchap,Venezia,6.0,13.0
 138,C,Basic,Venezia,6.0,19.0
+17,D,Obrador,Sassuolo,6.0,15.0
 1,D,Kolasinac,Atalanta,5.0,12.0
-21,A,Maldini,Cagliari,5.0,14.0
+21,A,Maldini,Cagliari,5.0,22.0
 2,D,Vitik,Bologna,5.0,11.0
 2,D,Holm,Bologna,5.0,13.0
 2,C,Amondarain,Bologna,5.0,12.0
@@ -254,7 +257,7 @@ id,r,name,team,price,fvm
 8,C,Meichtry,Genoa,5.0,14.0
 8,C,Traorè Hj.,Genoa,5.0,11.0
 9,C,Mkhitaryan,Inter,5.0,19.0
-10,D,Kelly L.,Juventus,5.0,13.0
+10,D,Kelly L.,Juventus,5.0,10.0
 10,C,Koopmeiners,Juventus,5.0,14.0
 11,D,Pedraza,Lazio,5.0,15.0
 11,C,Dele-Bashiru,Lazio,5.0,13.0
@@ -263,7 +266,7 @@ id,r,name,team,price,fvm
 119,C,Berisha M.,Lecce,5.0,16.0
 119,C,Gandelman,Lecce,5.0,14.0
 12,C,Fofana Y.,Milan,5.0,23.0
-12,A,Camarda,Milan,5.0,18.0
+12,A,Camarda,Milan,5.0,20.0
 143,P,Thiam,Monza,5.0,12.0
 143,A,Mota,Monza,5.0,18.0
 13,P,Milinkovic-Savic V.,Napoli,5.0,10.0
@@ -274,8 +277,8 @@ id,r,name,team,price,fvm
 15,D,Rensch,Roma,5.0,16.0
 15,C,Pisilli,Roma,5.0,17.0
 17,C,Matic,Sassuolo,5.0,15.0
-17,C,Adzic,Sassuolo,5.0,14.0
-17,C,Bakola,Sassuolo,5.0,16.0
+17,C,Adzic,Sassuolo,5.0,16.0
+17,C,Bakola,Sassuolo,5.0,14.0
 18,D,Pedersen,Torino,5.0,13.0
 18,C,Cacciamani,Torino,5.0,18.0
 18,C,Gineitis,Torino,5.0,13.0
@@ -324,7 +327,7 @@ id,r,name,team,price,fvm
 15,D,Ghilardi,Roma,4.0,10.0
 15,C,El Aynaoui,Roma,4.0,18.0
 17,D,Walukiewicz,Sassuolo,4.0,10.0
-17,D,Doig,Sassuolo,4.0,13.0
+17,D,Doig,Sassuolo,4.0,10.0
 18,D,Comert,Torino,4.0,10.0
 18,C,Fitz-Jim,Torino,4.0,13.0
 18,C,Ilkhan,Torino,4.0,10.0
@@ -338,10 +341,11 @@ id,r,name,team,price,fvm
 138,D,Halhal,Venezia,4.0,10.0
 138,D,Correia T.,Venezia,4.0,12.0
 143,A,Robinson J.,Monza,4.0,10.0
+7,D,Terzic,Frosinone,4.0,11.0
 1,D,Kossounou,Atalanta,3.0,7.0
 1,C,Sulemana I.,Atalanta,3.0,7.0
 2,D,Casale,Bologna,3.0,6.0
-17,C,Dominguez B.,Sassuolo,3.0,8.0
+17,C,Dominguez B.,Sassuolo,3.0,12.0
 21,D,Rodriguez Ju.,Cagliari,3.0,10.0
 21,D,Idrissi R.,Cagliari,3.0,7.0
 21,C,Deiola,Cagliari,3.0,8.0
@@ -470,7 +474,7 @@ id,r,name,team,price,fvm
 143,D,Antov,Monza,1.0,2.0
 143,D,Bakoune,Monza,1.0,4.0
 13,P,Contini,Napoli,1.0,1.0
-13,D,Marianucci,Napoli,1.0,5.0
+13,D,Marianucci,Napoli,1.0,3.0
 13,D,Mazzocchi,Napoli,1.0,3.0
 107,P,Corvi,Parma,1.0,1.0
 107,D,Ndiaye,Parma,1.0,4.0
@@ -507,3 +511,6 @@ id,r,name,team,price,fvm
 138,A,Lauberbach,Venezia,1.0,1.0
 1,P,Vismara,Atalanta,1.0,1.0
 17,P,Satalino,Sassuolo,1.0,1.0
+119,P,Penev,Lecce,1.0,1.0
+7,P,Pisseri,Frosinone,1.0,1.0
+21,P,Radunovic,Cagliari,1.0,1.0
