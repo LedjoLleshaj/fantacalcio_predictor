@@ -91,13 +91,14 @@ def build(out="fantacalcio/asta_board_2627.xlsx"):
     rel = full[F.features_rel].astype(float).div(mins.clip(lower=1), axis=0)
     rel[F.features_rel_gamecorr] = rel[F.features_rel_gamecorr].mul(mins / games.clip(lower=1) / 90, axis=0)
     base = pd.concat([abs_part, rel], axis=1).to_numpy("float32")
-    fv = np.zeros(len(of))
+    fv = np.zeros(len(of)); mv = np.zeros(len(of))
     for home in (1, 0):
         add = np.zeros((len(of), 4), "float32"); add[:, 0] = home
         add[:, 1] = (of.r == "D"); add[:, 2] = (of.r == "C"); add[:, 3] = (of.r == "A")
         raw = of_m.predict(sc_of.transform(np.concatenate([base, add], axis=1)), verbose=0)
         fv += np.array([_mean_fv(r, 1.2) for r in np.array(raw[1])]) / 2
-    of["exp_FV"] = fv
+        mv += np.array([_mean_fv(r, 1.2) for r in np.array(raw[0])]) / 2   # voto: modificatore difesa
+    of["exp_FV"] = fv; of["exp_MV"] = mv
     of["apps25"] = pd.to_numeric(players.reindex(of.name)["games"].values, errors="coerce")
 
     # ---- goalkeepers ----
@@ -105,13 +106,14 @@ def build(out="fantacalcio/asta_board_2627.xlsx"):
     absg = fullg[F.features_abs_gk[3:]].astype(float)                 # drop gk_games,gk_games_starts,gk_minutes
     relg = fullg[F.features_rel_gk].astype(float).div(minsg.clip(lower=1), axis=0)
     baseg = pd.concat([absg, relg], axis=1).to_numpy("float32")
-    fvg = np.zeros(len(gk)); csg = np.zeros(len(gk))
+    fvg = np.zeros(len(gk)); csg = np.zeros(len(gk)); mvg = np.zeros(len(gk))
     for home in (1, 0):
         add = np.zeros((len(gk), 1), "float32"); add[:, 0] = home
         raw = gk_m.predict(sc_gk.transform(np.concatenate([baseg, add], axis=1)), verbose=0)
         fvg += np.array([_mean_fv(r, 0.8) for r in np.array(raw[1])]) / 2
+        mvg += np.array([_mean_fv(r, 0.8) for r in np.array(raw[0])]) / 2  # voto: modificatore difesa
         csg += np.array(raw[2]).ravel() / 2
-    gk["exp_FV"] = fvg; gk["clean_sheet_pct"] = (csg * 100).round(1)
+    gk["exp_FV"] = fvg; gk["exp_MV"] = mvg; gk["clean_sheet_pct"] = (csg * 100).round(1)
     gk["apps25"] = pd.to_numeric(players.reindex(gk.name)["gk_games"].values, errors="coerce")
 
     board = pd.concat([of, gk], ignore_index=True)
@@ -122,6 +124,7 @@ def build(out="fantacalcio/asta_board_2627.xlsx"):
     board["proj_pts"] = (board["exp_FV"] * board["apps25"]).round(0)
     board["value"] = (board["proj_pts"] / board["price"].clip(lower=1)).round(1)
     board["exp_FV"] = board["exp_FV"].round(2)
+    board["exp_MV"] = board["exp_MV"].round(2)
     # starter likelihood from 2025/26 appearances (fbref minutes are stripped/0,
     # but games/gk_games are reliable). Proxy -> confirm vs 'probabili formazioni'.
     board["role_lock"] = [_lock(a, r) for a, r in zip(board.apps25, board.r)]
@@ -138,7 +141,7 @@ def build(out="fantacalcio/asta_board_2627.xlsx"):
         s = board[(board.r == r) & (board.fvm > 0)]
         fit[r] = np.polyfit(s.fvm, s.proj_pts, 1) if len(s) > 2 else (0.0, 150.0)
     miss = miss.copy()
-    miss["exp_FV"] = np.nan; miss["clean_sheet_pct"] = np.nan; miss["apps25"] = np.nan
+    miss["exp_FV"] = np.nan; miss["exp_MV"] = np.nan; miss["clean_sheet_pct"] = np.nan; miss["apps25"] = np.nan
     miss["proj_pts"] = miss.apply(
         lambda x: round(float(np.clip(fit[x.r][0] * x.fvm + fit[x.r][1], 90, 260))), axis=1)
     miss["value"] = (miss.proj_pts / miss.price.clip(lower=1)).round(1)
@@ -154,7 +157,7 @@ def build(out="fantacalcio/asta_board_2627.xlsx"):
     order = {"must-have": 0, "value": 1, "sleeper": 2, "unrated": 3, "filler": 4, "avoid": 5}
     full["_t"] = full.tier.map(order)
     full = full.sort_values(["r", "_t", "value"], ascending=[True, True, False]).drop(columns="_t")
-    cols = ["name", "team", "r", "tier", "role_lock", "price", "apps25", "exp_FV",
+    cols = ["name", "team", "r", "tier", "role_lock", "price", "apps25", "exp_MV", "exp_FV",
             "proj_pts", "value", "clean_sheet_pct", "fvm", "source"]
     full = full[cols]
 
